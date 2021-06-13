@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 09 Haz 2021, 22:54:38
+-- Üretim Zamanı: 13 Haz 2021, 13:31:50
 -- Sunucu sürümü: 10.4.18-MariaDB
 -- PHP Sürümü: 8.0.3
 
@@ -84,7 +84,7 @@ CREATE TABLE `personal_info` (
 --
 
 INSERT INTO `personal_info` (`personal_id`, `personal_title`, `personal_name`, `personal_surname`, `age`, `cv`) VALUES
-(1, 'KİŞİSEL BİLGİLER', 'Nilsu', 'Kamişli', 23, '903383dbe84483ffe3628a9149a55a1e.jpg');
+(1, 'KİŞİSEL BİLGİLER', 'Nilsu', 'Kamişli', 22, 'imal usulleri.pdf');
 
 -- --------------------------------------------------------
 
@@ -151,7 +151,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `password`) VALUES
-(1, 'nil', 'ab@c.com', '95d35ccdd21bd78afdd3178021ed026d');
+(1, 'admin', 'ab@c.com', '93279e3308bdbbeed946fc965017f67a');
 
 --
 -- Dökümü yapılmış tablolar için indeksler

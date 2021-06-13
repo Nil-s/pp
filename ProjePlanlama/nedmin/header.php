@@ -2,7 +2,10 @@
 ob_start();
 session_start();
   include "connect.php";
-  @$user_name = $_SESSION['user_name'];
+  if(!isset($_SESSION['user_name'])){
+    header("Location:login.php");
+  }
+  $user_name = $_SESSION['user_name'];
   $query = $db -> prepare("SELECT * FROM user WHERE user_name='$user_name' ");
   $query ->execute();
 
@@ -47,7 +50,7 @@ session_start();
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Yönetim Paneli</span></a>
+              <a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span>Yönetim Paneli</span></a>
             </div>
 
             <div class="clearfix"></div>
